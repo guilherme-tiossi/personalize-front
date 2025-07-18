@@ -1,16 +1,16 @@
-.card {
+.longCard {
   margin: 0 auto;
   box-sizing: border-box;
   border-radius: 15px;
   background-color: rgb(215, 218, 214);
   border: 3px solid rgb(198, 202, 196);
-  width: 500px;
+  width: 900px;
   height: 600px;
   display: flex;
   flex-direction: column;
 }
 
-.cardBar {
+.longCardBar {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   height: 50px;
@@ -24,9 +24,7 @@
   font-size: 20px;
 }
 
-.cardContent {
+.longCardContent {
   flex: 1; /* ocupa tudo que sobrou do card, descontando o 35px do cardBar */
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
