@@ -1,3 +1,5 @@
+import Card from "@/components/Card";
+import RegisterForm from "@/components/RegisterForm";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -20,6 +22,7 @@ export default function Home() {
               <a href="/login">login</a>
             </li>
           </ul>
+          <Card title="register" content={<RegisterForm></RegisterForm>}></Card>
         </main>
       </div>
     </>

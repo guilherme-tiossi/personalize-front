@@ -1,7 +1,8 @@
+import LongCard from "@/components/LongCard";
+import UserData from "@/components/UserData";
 import Head from "next/head";
-import Image from "next/image";
 
-export default function Home() {
+export default function User() {
   return (
     <>
       <Head>
@@ -10,16 +11,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
+        <ul>
+          <li>
+            <a href="/login">logout</a>
+          </li>
+        </ul>
         <main>
-          <Image />
-          <ul>
-            <li>
-              <a href="/login">login</a>
-            </li>
-            <li>
-              <a href="/register">register</a>
-            </li>
-          </ul>
+          <LongCard title="user" content={<UserData></UserData>}></LongCard>
         </main>
       </div>
     </>
