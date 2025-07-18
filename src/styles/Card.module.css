@@ -1,0 +1,22 @@
+.card {
+  background-color: rgb(179, 190, 176);
+  width: 500px;
+  height: 625px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardBar {
+  height: 35px;
+  background-color: rgb(114, 197, 95);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.cardContent {
+  flex: 1; /* ocupa tudo que sobrou do card, descontando o 35px do cardBar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
