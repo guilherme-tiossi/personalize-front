@@ -12,6 +12,7 @@ export default function UserData() {
           malesuada pulvinar justo id dignissim. Quisque mollis elit turpis, in
           ullamcorper.
         </p>
+        <a href="/login">update data</a>
       </div>
     </div>
   );

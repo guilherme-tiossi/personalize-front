@@ -30,3 +30,23 @@
   font-size: 18px;
   width: 50%;
 }
+
+.userData a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50;
+  width: 150px;
+  margin-top: 50px;
+  background-color: rgb(145, 200, 145);
+  border-radius: 15px;
+  border: 3px solid rgb(112, 188, 112);
+  font-size: 20px;
+  color: rgb(55, 110, 55);
+}
+
+.userData a:hover {
+  background-color: rgb(121, 179, 121);
+  border: 2px solid rgb(85, 161, 85);
+}
