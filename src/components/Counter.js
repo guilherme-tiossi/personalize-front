@@ -1,12 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "@/styles/Counter.module.css";
 
 export default function Counter({ setBgColor }) {
-  const [counter, alterCounter] = useState(0);
+  let updatedCounter;
+
+  useEffect(() => {
+    const storedCounter = localStorage.getItem("counter");
+    if (storedCounter !== null) {
+      alterCounter(Number(storedCounter));
+      if (storedCounter > 0) {
+        alterSubtractionButton(styles.button);
+      }
+      updatedCounter = storedCounter;
+    } else {
+      updatedCounter = 0;
+    }
+  }, []);
+
+  const [counter, alterCounter] = useState(updatedCounter);
   const [subtractionButton, alterSubtractionButton] = useState(
     styles.disabledButton
   );
-  let updatedCounter = 0;
+
+  useEffect(() => {
+    localStorage.setItem("counter", counter);
+  }, [counter]);
 
   const updateCounter = (type) => {
     if (type == "sum") {
