@@ -1,0 +1,25 @@
+.mainDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productCard {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(215, 218, 214);
+  border: 3px solid rgb(198, 202, 196);
+  width: 550px;
+}
+
+.productImage {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

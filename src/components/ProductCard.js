@@ -1,7 +1,6 @@
 import styles from "@/styles/Products.module.css";
 
 export default function ProductCard(data) {
-  console.log(data.data.title);
   return (
     <>
       <div className={styles.productCard}>
